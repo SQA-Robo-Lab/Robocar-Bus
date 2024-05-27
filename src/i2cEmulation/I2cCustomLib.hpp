@@ -4,7 +4,10 @@
 #define I2C_CUSTOM_LIB_SERIAL_H
 
 #include <Arduino.h>
+extern "C"
+{
 #include "MessageBuffer.h"
+}
 
 /**
  * @brief An I2C-emulation-Serial receiver receives messages of a certain messageTypeName and stores them in a buffer.
