@@ -9,6 +9,7 @@ char *message = "trololol";
 
 void setup()
 {
+    Serial.begin(115200);
     i2cCommunication_setup(1);
     initAndRegisterI2cReceiver(&rcv,
                                rcv.messageTypeName,
@@ -23,4 +24,5 @@ void setup()
 
 void loop()
 {
+    i2cEmulationSerial_loop();
 }
